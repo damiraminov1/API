@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  baraban-web-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    entrypoint: 'dotnet BarabanWebAPI.dll'
+    container_name: baraban-web-api
+    restart: unless-stopped
+    ports:
+      - "7293:80"
+  calc-microservice:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    entrypoint: 'dotnet CalcMicroservice.dll'
+    container_name: calc-microservice
+    restart: unless-stopped
+    ports:
+      - "7213:80"
+  report-microservice:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    entrypoint: 'dotnet ReportMicroservice.dll'
+    container_name: report-microservice
+    restart: unless-stopped
+    ports:
+      - "7173:80"

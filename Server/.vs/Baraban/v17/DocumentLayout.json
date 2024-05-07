@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Grisha\\Desktop\\API\\Server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5A244CD3-6ADF-4221-879F-5D3B68D1934F}|BarabanWebAPI\\BarabanWebAPI.csproj|c:\\users\\grisha\\desktop\\api\\server\\barabanwebapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A244CD3-6ADF-4221-879F-5D3B68D1934F}|BarabanWebAPI\\BarabanWebAPI.csproj|solutionrelative:barabanwebapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A244CD3-6ADF-4221-879F-5D3B68D1934F}|BarabanWebAPI\\BarabanWebAPI.csproj|c:\\users\\grisha\\desktop\\api\\server\\barabanwebapi\\controllers\\gatewaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A244CD3-6ADF-4221-879F-5D3B68D1934F}|BarabanWebAPI\\BarabanWebAPI.csproj|solutionrelative:barabanwebapi\\controllers\\gatewaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A244CD3-6ADF-4221-879F-5D3B68D1934F}|BarabanWebAPI\\BarabanWebAPI.csproj|c:\\users\\grisha\\desktop\\api\\server\\barabanwebapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A244CD3-6ADF-4221-879F-5D3B68D1934F}|BarabanWebAPI\\BarabanWebAPI.csproj|solutionrelative:barabanwebapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4685E380-6462-4B1E-BC0A-4D142541127A}|Domain\\Domain.csproj|c:\\users\\grisha\\desktop\\api\\server\\domain\\models\\db\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4685E380-6462-4B1E-BC0A-4D142541127A}|Domain\\Domain.csproj|solutionrelative:domain\\models\\db\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Grisha\\Desktop\\API\\Server\\BarabanWebAPI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BarabanWebAPI\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Grisha\\Desktop\\API\\Server\\BarabanWebAPI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BarabanWebAPI\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T19:37:20.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GatewayController.cs",
+              "DocumentMoniker": "C:\\Users\\Grisha\\Desktop\\API\\Server\\BarabanWebAPI\\Controllers\\GatewayController.cs",
+              "RelativeDocumentMoniker": "BarabanWebAPI\\Controllers\\GatewayController.cs",
+              "ToolTip": "C:\\Users\\Grisha\\Desktop\\API\\Server\\BarabanWebAPI\\Controllers\\GatewayController.cs",
+              "RelativeToolTip": "BarabanWebAPI\\Controllers\\GatewayController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T19:36:48.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Grisha\\Desktop\\API\\Server\\BarabanWebAPI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "BarabanWebAPI\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Grisha\\Desktop\\API\\Server\\BarabanWebAPI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "BarabanWebAPI\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAYwF8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T19:35:30.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\Grisha\\Desktop\\API\\Server\\Domain\\Models\\DB\\UserModel.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\DB\\UserModel.cs",
+              "ToolTip": "C:\\Users\\Grisha\\Desktop\\API\\Server\\Domain\\Models\\DB\\UserModel.cs",
+              "RelativeToolTip": "Domain\\Models\\DB\\UserModel.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T15:37:17.745Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
