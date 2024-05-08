@@ -11,4 +11,4 @@ COPY . .
 # COPY . ./
 
 # запускаем основной скрипт в момент запуска контейнера
-CMD npm start --prefix Client/
+# CMD 

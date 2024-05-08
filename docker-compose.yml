@@ -42,7 +42,7 @@ services:
       - ACCEPT_EULA=Y
       - MSSQL_SA_PASSWORD=da2a251ffafwwSGDSgds__GSDGsgsgsd_Sg515szfRD
     volumes:
-      - ./mssql_data:/var/lib/mssql/data
+      - ./Server/mssql_data:/var/lib/mssql/data
     ports:
       - "1433:1433"
   frontend:
