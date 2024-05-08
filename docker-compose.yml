@@ -49,4 +49,6 @@ services:
     build:
       context: .
       dockerfile: frontend.Dockerfile
-    entrypoint: 'npm start --prefix Client'
+    ports:
+      - "8000:8000"
+    entrypoint: 'npm start'
