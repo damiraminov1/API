@@ -17,19 +17,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
         options.TokenValidationParameters = new TokenValidationParameters
         {
-            // ���������, ����� �� �������������� �������� ��� ��������� ������
             ValidateIssuer = true,
-            // ������, �������������� ��������
             ValidIssuer = AuthOptions.ISSUER,
-            // ����� �� �������������� ����������� ������
             ValidateAudience = true,
-            // ��������� ����������� ������
             ValidAudience = AuthOptions.AUDIENCE,
-            // ����� �� �������������� ����� �������������
             ValidateLifetime = true,
-            // ��������� ����� ������������
             IssuerSigningKey = AuthOptions.GetSymmetricSecurityKey(),
-            // ��������� ����� ������������
             ValidateIssuerSigningKey = true,
         };
     });
@@ -76,7 +69,7 @@ app.UseSwagger();
 app.UseSwaggerUI(
 	options =>
 	{
-		options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+		options.SwaggerEndpoint("/swagger/v1/swagger.json", "Baraban V1");
 	    options.RoutePrefix = string.Empty;
     }
 );

@@ -4,9 +4,6 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 
 COPY . .
 
-EXPOSE 80
-EXPOSE 443
-
 RUN dotnet restore "Server/BarabanWebAPI/BarabanWebAPI.csproj"
 RUN dotnet restore "Server/CalcMicroservices/CalcMicroservice.csproj"
 RUN dotnet restore "Server/ReportMicroservice/ReportMicroservice.csproj"

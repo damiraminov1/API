@@ -4,27 +4,49 @@ services:
   baraban-web-api:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: backend.Dockerfile
     entrypoint: 'dotnet BarabanWebAPI.dll'
     container_name: baraban-web-api
     restart: unless-stopped
     ports:
       - "7293:80"
+    depends_on:
+      - db
   calc-microservice:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: backend.Dockerfile
     entrypoint: 'dotnet CalcMicroservice.dll'
     container_name: calc-microservice
     restart: unless-stopped
     ports:
       - "7213:80"
+    depends_on:
+      - db
   report-microservice:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: backend.Dockerfile
     entrypoint: 'dotnet ReportMicroservice.dll'
     container_name: report-microservice
     restart: unless-stopped
     ports:
       - "7173:80"
+    depends_on:
+      - db
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: db
+    restart: unless-stopped
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=da2a251ffafwwSGDSgds__GSDGsgsgsd_Sg515szfRD
+    volumes:
+      - ./mssql_data:/var/lib/mssql/data
+    ports:
+      - "1433:1433"
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend.Dockerfile
+    entrypoint: 'npm start --prefix Client'
