@@ -11,7 +11,8 @@ services:
     ports:
       - "7293:80"
     depends_on:
-      - db
+      - calc-microservice
+      - report-microservice
   calc-microservice:
     build:
       context: .
@@ -49,6 +50,11 @@ services:
     build:
       context: .
       dockerfile: frontend.Dockerfile
+    entrypoint: 'npm start'
+    container_name: frontend
+    restart: unless-stopped
     ports:
       - "8000:8000"
-    entrypoint: 'npm start'
+    depends_on:
+      - baraban-web-api
+    
