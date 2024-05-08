@@ -13,6 +13,7 @@ services:
     depends_on:
       - calc-microservice
       - report-microservice
+      - db
   calc-microservice:
     build:
       context: .
