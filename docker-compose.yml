@@ -20,6 +20,8 @@ services:
     entrypoint: 'dotnet CalcMicroservice.dll'
     container_name: calc-microservice
     restart: unless-stopped
+    env_file:
+      - fileName
     ports:
       - "7213:80"
     depends_on:
@@ -57,4 +59,3 @@ services:
       - "8000:8000"
     depends_on:
       - baraban-web-api
-    
