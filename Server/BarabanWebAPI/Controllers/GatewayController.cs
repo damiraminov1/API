@@ -26,12 +26,11 @@ namespace BarabanWebAPI.Controllers
 			return res;
 		}
 
-        //[HttpGet(nameof(Report))]
-        //public async Task<DataOutputModel?> Report(int inputId)
-        //{
-        //    var res = await _reportService.Report(inputId);
-        //    return res;
-        //}
-
-    }
+		[HttpGet(nameof(Report))]
+		public async Task<DataOutputModel?> Report(int inputId)
+		{
+			var res = await _reportService.Report(inputId);
+			return res;
+		}
+	}
 }

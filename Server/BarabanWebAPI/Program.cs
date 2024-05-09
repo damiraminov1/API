@@ -73,6 +73,8 @@ builder.Services.AddScoped<ReportService>();
 
 var app = builder.Build();
 
+app.Services.GetRequiredService<ApplicationContext>().Database.Migrate();
+
 // Configure the HTTP request pipeline.
 app.UseCors(x => x
     .AllowAnyMethod()
@@ -88,7 +90,7 @@ app.UseSwaggerUI(
     }
 );
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseRouting();
 
 app.UseAuthentication();

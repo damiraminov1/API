@@ -1,10 +1,10 @@
-version: "3.8"
+
 
 services:
   baraban-web-api:
     build:
       context: .
-      dockerfile: backend.Dockerfile
+      dockerfile: Baraban.Dockerfile
     entrypoint: 'dotnet BarabanWebAPI.dll'
     container_name: baraban-web-api
     restart: unless-stopped
@@ -13,16 +13,13 @@ services:
     depends_on:
       - calc-microservice
       - report-microservice
-      - db
   calc-microservice:
     build:
       context: .
-      dockerfile: backend.Dockerfile
+      dockerfile: Calc.Dockerfile
     entrypoint: 'dotnet CalcMicroservice.dll'
     container_name: calc-microservice
     restart: unless-stopped
-    env_file:
-      - fileName
     ports:
       - "7213:80"
     depends_on:
@@ -30,7 +27,7 @@ services:
   report-microservice:
     build:
       context: .
-      dockerfile: backend.Dockerfile
+      dockerfile: Report.Dockerfile
     entrypoint: 'dotnet ReportMicroservice.dll'
     container_name: report-microservice
     restart: unless-stopped
@@ -46,7 +43,7 @@ services:
       - ACCEPT_EULA=Y
       - MSSQL_SA_PASSWORD=da2a251ffafwwSGDSgds__GSDGsgsgsd_Sg515szfRD
     volumes:
-      - ./Server/mssql_data:/var/lib/mssql/data
+      - ./Server/mssql_data:/var/opt/mssql/data
     ports:
       - "1433:1433"
   frontend:
