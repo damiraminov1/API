@@ -2,12 +2,14 @@
 using BarabanWebAPI.Dto;
 using BarabanWebAPI.Services;
 using Domain.Models.DB;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
 
 namespace BarabanWebAPI.Controllers
 {
-	[Route("[controller]")]
+    [Authorize]
+    [Route("[controller]")]
 	[ApiController]
 	public class GatewayController : ControllerBase
 	{
